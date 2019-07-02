@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Biografije -WHILE  IF Else IF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+<style>
+*{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+p{
+    height: 150px;
+    background-color: blanchedalmond;
+    overflow-y: scroll;
+    border:rosybrown solid 5px;
+} 
+h1, h3{
+    background-color: rosybrown; 
+    color: bisque;
+    text-shadow: 2px 2px 4px #000000;
+}
+img{
+    float: right;
+    width: 150px;
+    height: 150px;
+    border: solid 5px rosybrown;
+}
+
+#omotac{
+    background-color:rosybrown;
+    border: solid 10px rosybrown;
+}
+
+</style>
+</head>
+
+<body>
+<div id="omotac">
+<h1>Znamenite licnosti</h1>
+<h3 id="naslov">Ovo je stranica sa informacijama o srpskim znamenitim licnostima</h3>
+</div>
+
+
+
+  <script>
+    //Uneti naziv slike npr tesla.jpg
+   // Dodati biografiju licnosti na stranicu u odnosu na naziv slike npr. Naslov
+    //paragraf , slika , link ka wikipediji. Ponuditi unos za do 3 licnosti preko
+    //prompta i nazive slika i sve lepo uokviriti i doterati
+    var brojLicnosti = parseInt(prompt('Unesite broj 1, 2 ili 3'));
+    var omotac = document.getElementById('omotac');
+    var nt1 = '<img src = "slike/nikola_tesla1.jpg" alt = "Slika Nikola Tesla 1">';
+    var nt2 = '<img src = "slike/nikola_tesla2.jpg"   alt = "Slika Nikola Tesla 2">';
+    var nt3 = '<img src = "slike/nikola_tesla3.jpg"   alt = "Slika Nikola Tesla 3">';
+    var mm1 = '<img src="slike/milutin_milankovic1.jpg" alt="Slika Milutina Milankovica broj 1">';
+    var mm2 = '<img src="slike/milutin_milankovic2.jpg"   alt="Slika Milutina Milankovica broj 2">';
+    var mm3 = '<img src="slike/milutin_milankovic3.jpg"   alt="Slika Milutina Milankovica broj 3">';
+    var mp1 = '<img src="slike/mihajlo_pupin1.jpg"   alt="Slika Mihajlo Pupin 1">';
+    var mp2 = '<img src="slike/mihajlo_pupin2.jpg"   alt="Slika Mihajla Pupina broj 2">';
+    var mp3 = '<img src="slike/mihajlo_pupin3.jpg"   alt="Slika Mihajla Pupina broj 3">';
+                                                   
+    var nt = 'Biografija:Nikola Tesla je rođen u porodici pravoslavnog sveštenika 10. jula 1856. godine u Smiljanu, današnja Republika Hrvatska. Njegovi roditelji Milutin i Georgina osim njega imali su sina Daneta i ćerke Angelinu i Milku, starije od Nikole i Maricu najmlađe dete u porodici Tesla.Svoje ime je dobio je po dedi sa očeve strane. Školovanje je započeo u rodnom mestu, gde je proveo najbezbrižnije godine svog života. Nakon nesrećnog slučaja, prilikom koga je porodici Tesla poginuo sin prvenac, Dane, porodica se preselila u Gospić gde je mladi Nikola nastavio školovanje. Školujuci se u Gospiću, a kasnije na Visokoj realnoj gimnaziji u Karlovcu, njega je morila činjenica da će nakon toga morati da nastavi porodičnu tradiciju i da postane sveštenik. Ta činjenica mu nije davala mira budući da su ga iskreno zanimale prirodne nauke. Po završetku karlovačke gimnazije, na raspustu, vrativši se u Gospić mladi Tesla se razboleo od kolere. U to vreme ova opaka bolest odnosila je veliki broj života.“U jednom od samrtnih trenutaka za koje su mislili da su mi poslednji, otac je uleteo u moju sobu. Još uvek pamtim njegovo bledo lice dok je pokušavao da me razveseli, nesigurnim glasom. Rekoh mu:-Možda bih mogao da se oporavim ako mi dopustiš da studiram tehniku.';
+    var mm = 'Milanković je rođen 28. maja 1879. godine u Dalju, blizu Osijeka na području kraljevine Hrvatske i Slavonije (koja je bila deo Austro-Ugarske monarhije).Umro je 12. decembra 1958. godine u Beogradu. Pohađao je Bečki tehnološki institut (Veliku školu), gde je diplomirao građevinu 1902. godine, a zatim i stekao doktorat iz tehničkih nauka 1904. godine kao prvi Srbin. Kasnije je radio u tada čuvenoj firmi Adolfa Barona Pitela Betonbau-Unternehmung u Beču. Gradio je brane, mostove, vijadukte, akvadukte i druge građevine od armiranog betona, u tadašnjoj Austro-Ugarskoj. Milanković je nastavio da se bavi građevinom u Beču do jeseni 1909. godine kada mu je ponuđena katedra primenjene matematike na Beogradskom univerzitetu, (racionalna mehanika, nebeska mehanika i teorijska fizika). Godina 1909. označava prekretnicu u njegovom životu. Mada je nastavio da se bavi istraživanjem raznih problema u vezi sa primenom armiranog betona, odlučio je da se skoncentriše na fundamentalna istraživanja. Tek što se Milanković doselio u Beograd, usledili su burni događaji: Balkanski ratovi, a zatim i Prvi svetski rat. Kada je izbio rat (tek što se oženio), Austro-Ugarska vojska je internirala Milankovića u Nežider, a kasnije u Budimpeštu, gde mu je bilo dozvoljeno da radi u biblioteci Mađarske akademije nauka. Već 1912. godine njegova interesovanja su se usmerila ka proučavanju solarne klime i planetarnih temperatura. Dok je bio interniran u Budimpešti, Milutin Milanković je posvetio svoje vreme radu na ovom polju i do kraja rata završio monografiju o ovom problemu, koja je objavljena 1920. godine u izdanju Srpske kraljevske akademije nauka i umetnosti u Parizu, pod naslovom Théorie mathématique des phénomènes thermiques produits par la radiation solaire (Matematička teorija termičkih fenomena uzrokovanih sunčevim zračenjima).';
+    var mp = 'Mihajlo Pupin ili punim imenom Mihajlo Idvorski Pupin (9. oktobar 1854[1][2] — 12. mart 1935) bio je naučnik, pronalazač, profesor na Univerzitetu Kolumbija, nosilac jugoslovenskog odlikovanja Beli orao Prvog reda i počasni konzul Srbije u SAD. Bio je i jedan od osnivača i dugogodišnji predsednik Srpskog narodnog saveza u Americi. Takođe je dobio i Pulicerovu nagradu (1924) za autobiografsko delo „Od izbeglice do pronalazača“ (engl. From immigrant to inventor)[3][4].Mihajlo Pupin je tokom svog naučnog i eksperimetalnog rada dao značajne zaključke važne za polja višestruke telegrafije, bežične telegrafije i telefonije, potom rentgenologije, a ima i velikih zasluga za razvoj elektrotehnike. Njegovo najvažnije, najslavnije otkriće su bili Pupinovi kalemovi zbog čega se njemu u čast proces korištenja tih kalemova u telefonskim razgovorima na velikim razdaljinama nazvan pupinizacija.Dobitnik je mnogih naučnih nagrada i medalja, bio je član Francuske akademije nauka, Srpske kraljevske akademije, predsjedniuk New Yorkške akademije nauka, predsjednik američkog saveza za napredak nauke i počasni doktor 18 univerziteta. Po njemu je pored ostalog dobio ime i beogradski institut koji se od 1946. godine zove Mihajlo Pupin.';
+    var nt_link =  '<a href = "https://sh.wikipedia.org/wiki/Nikola_Tesla">Vise na Wikipediji</a>';
+    var mm_link = '<a href = "https://sh.wikipedia.org/wiki/Milutin_Milankovi%C4%87">Vise na Wikipediji</a>';
+    var mp_link = '<a href = "https://sh.wikipedia.org/wiki/Mihajlo_Pupin">Vise na Wikipediji</a>'; 
+                   
+    while (isNaN(brojLicnosti) || brojLicnosti < 1 || brojLicnosti > 3) {
+        alert('Pogresan unos');
+        var brojLicnosti = parseInt(prompt('Unesite broj 1, 2 ili 3'));
+    }
+
+
+    if(brojLicnosti ==1){
+        alert('Ucitavamo biografiju Nikole Tesle');            
+        licnost(nt, nt_link, nt1, nt2, nt3);  
+
+        }else if(brojLicnosti ==2){
+            alert('Ucitavamo biografije Nikole Tesle i \nMilutina Milankovica');
+            licnost(nt, nt_link, nt1, nt2, nt3);
+            licnost(mm, mm_link, mm1, mm2, mm3);
+        }else if(brojLicnosti == 3){
+            alert('Ucitavamo biografije Nikole Tesle\nMilutina Milankovica\nMihajla Pupina');
+            licnost(nt, nt_link, nt1, nt2, nt3);
+            licnost(mm, mm_link, mm1, mm2, mm3);
+            licnost(mp, mp_link, mp1, mp2, mp3);
+        }
+
+    function licnost(tekst, izvor, slika1, slika2, slika3) {
+        var brojSlike = parseInt(prompt('Slika 1, 2 ili 3'));
+        while(isNaN(brojSlike) || brojSlike <1 || brojSlike > 3){
+                alert('Unos nije ispravan');
+                var brojSlike = parseInt(prompt('Slika 1, 2 ili 3'));
+        }
+
+        var slika = document.createElement('div');
+            slika.setAttribute('class', 'sekcija')
+        if (brojSlike == 1) {              
+                slika.innerHTML = slika1;
+            } else if(brojSlike == 2){                
+               slika.innerHTML = slika2;
+            }else {    
+                slika.innerHTML = slika3;
+            }                            
+
+        var biografija = document.createElement('p');            
+           biografija.innerHTML = tekst;
+            slika.appendChild(biografija); 
+
+        var  a =  document.createElement('a');
+            a.innerHTML =izvor;
+            slika.appendChild(a);
+
+           omotac.appendChild(slika);                     
+    }
+       
+    </script>
+
+<body>
+
+    
+</body>
+</html>
+
+
